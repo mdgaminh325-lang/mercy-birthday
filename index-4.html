@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Mercy 💓</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;overflow:hidden;font-family:system-ui,sans-serif;background:linear-gradient(135deg,#ffe0ec,#ffd6b8,#e5d9ff);display:flex;align-items:center;justify-content:center;color:#613d54}.card{width:min(92%,430px);padding:38px 24px;text-align:center;background:#ffffffbd;backdrop-filter:blur(12px);border-radius:30px;box-shadow:0 20px 60px #5a326430;position:relative;z-index:2}.cake{font-size:78px;animation:bounce 1.7s infinite}h1{font-size:37px;margin:10px 0 7px;color:#e75b8d}h2{font-size:20px;font-weight:500;margin:0 0 22px}.message{font-size:20px;line-height:1.6;margin:15px 0 26px}button{border:0;border-radius:999px;padding:14px 25px;font-size:16px;background:#e75b8d;color:white;cursor:pointer;box-shadow:0 8px 22px #e75b8d55}.hidden{display:none}.surprise{font-size:19px;line-height:1.6;margin-top:22px;color:#d34e82}.float{position:fixed;bottom:-60px;animation:rise linear forwards;z-index:1}.confetti{position:fixed;top:-30px;animation:fall linear forwards;z-index:3}@keyframes bounce{50%{transform:translateY(-10px) rotate(2deg)}}@keyframes rise{to{transform:translateY(-115vh) rotate(360deg);opacity:0}}@keyframes fall{to{transform:translateY(110vh) rotate(540deg);opacity:0}}
+</style></head>
+<body>
+<div class="card"><div class="cake">🎂</div><h1>Happy Birthday Mercy! 💓</h1><h2>October 6 🎀</h2>
+<p class="message">🥳🥳<br><b>Happy Birthday Mercy 🥳🥳💓</b><br>May your day be filled with happiness, smiles, love and beautiful little moments! ✨🌸</p>
+<button onclick="surprise()">Tap for a surprise 💝</button>
+<div id="s" class="surprise hidden">🎉 Surprise! 🎉<br>Keep smiling and enjoy your special day! 💓🌷<br><b>Happy Birthday Mercy! 🥳</b></div></div>
+<script>
+const icons=["🎈","💓","🌸","✨","🎀","💖","🥳"];
+setInterval(()=>{let e=document.createElement("div");e.className="float";e.textContent=icons[Math.floor(Math.random()*icons.length)];e.style.left=Math.random()*100+"vw";e.style.fontSize=20+Math.random()*20+"px";e.style.animationDuration=5+Math.random()*5+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),10000)},500);
+function surprise(){document.getElementById("s").classList.remove("hidden");for(let i=0;i<45;i++)setTimeout(()=>{let e=document.createElement("div");e.className="confetti";e.textContent=["🎉","💓","✨","🌸","🎀","🥳"][Math.floor(Math.random()*6)];e.style.left=Math.random()*100+"vw";e.style.fontSize=18+Math.random()*15+"px";e.style.animationDuration=2.2+Math.random()*2+"s";document.body.appendChild(e);setTimeout(()=>e.remove(),4500)},i*35)}
+</script></body></html>
